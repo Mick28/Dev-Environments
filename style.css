@@ -1,6 +1,19 @@
+/* Trabajo en base a: 
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+   https://github.com/alura-es-cursos/2074-html-css-posicionamiento-flexbox/tree/aula3
+*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: #4A4A4A;
+    background-color: #000000;
     color: #FFFFFF;
+    height: 100vh;
+    box-sizing: border-box;
 
 }
 
@@ -12,8 +25,45 @@ h1{
     font-weight: bold;
 }
 
-span{
+/* span{
     color: #22D4FD;
     border: 1px solid #22D4FD;
     padding: 10px;
+} */
+
+/* Pasamos de lo general a lo especifico. */
+.section-title {
+    color: #22D4FD;
+    /* border: 1px solid #22D4FD; */
+    /* padding: 10px; */
+}
+
+.texto-destacado {
+    font-weight: bold; /* Asegura que el texto esté en negrita */
+    font-style: italic; /* Itálicas */
+    color: #a9c5f0;    /* Color del texto */
+    /* background-color: #46464D; /* Fondo resaltado */
+    /* padding: 1px 2px; /* Opcional: espacio alrededor del texto */
+    /* border-radius: 2px; /* Opcional: bordes redondeados */ 
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+}
+
+.presentación__contenido {
+    width: 615px;
+}
+
+.presentación__contenido__titulo {
+    font-family: "Krona One", serif;
+    font-size: 36px;    
+}
+
+.presentación__contenido__texto {  
+    font-family: "Montserrat", serif;
+    font-size: 24px;
 }
