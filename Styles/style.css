@@ -1,7 +1,7 @@
 /* Primeros pasos en Responsive Designe
-   https://app.aluracursos.com/course/html-css-trabajando-responsividad-publicacion-proyectos/task/87650
+   https://app.aluracursos.com/course/html-css-trabajando-responsividad-publicacion-proyectos/task/87679
    https://css-tricks.com/
-   https://github.com/alura-es-cursos/2085-html-css-responsividad/blob/aula2/styles/style.css
+   https://github.com/alura-es-cursos/2085-html-css-responsividad/blob/aula4/styles/style.css
 
     Uso de media queries
     https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries
@@ -147,5 +147,10 @@ h1{
 
     .presentacion {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentación__contenido {
+        width: auto;
     }
 }
