@@ -2,7 +2,10 @@
    https://app.aluracursos.com/course/html-css-trabajando-responsividad-publicacion-proyectos/task/87650
    https://css-tricks.com/
    https://github.com/alura-es-cursos/2085-html-css-responsividad/blob/aula2/styles/style.css
-*/
+
+    Uso de media queries
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries
+   */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -132,3 +135,17 @@ h1{
     font-weight: 400;
 }
 
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+    }
+}
