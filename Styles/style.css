@@ -1,7 +1,7 @@
-/* Trabajo en base a: 
-   https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+/* Primeros pasos en Responsive Designe
+   https://app.aluracursos.com/course/html-css-trabajando-responsividad-publicacion-proyectos/task/87650
    https://css-tricks.com/
-   https://github.com/alura-es-cursos/2080-html-css-header-footer-variables/tree/aula5
+   https://github.com/alura-es-cursos/2085-html-css-responsividad/blob/aula2/styles/style.css
 */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -9,6 +9,7 @@
     --color-primario: #000000;
     --color-secundario: #F6F6F6;
     --color-terciario: #22D4FD;
+    --color-hover: #272727;
 
     --fuente-montserrat: 'Montserrat', sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
@@ -22,7 +23,7 @@
 body {
     box-sizing: border-box;
     background-color: var(--color-primario);
-    color: #F6F6F6;
+    color: var(--color-secundario);
 }
 
 .header {
@@ -36,9 +37,9 @@ body {
 
 .header__menu__link {
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: VAR(--COLOR-TERCIARIO);
+    color: var(--color-terciario);
     text-decoration: none;
 }
 
@@ -51,10 +52,11 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 82px;
 }
 
 .presentación__contenido {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -62,12 +64,12 @@ h1{
 
 .presentación__contenido__titulo {
     font-family: var(--fuente-krona);
-    font-size: 36px;    
+    font-size: 2.25rem;    
 }
 
 /* Pasamos de lo general a lo especifico. */
 .section-title {
-    color: VAR(--COLOR-TERCIARIO);
+    color: var(--color-terciario);
 }
 
 .texto-destacado {
@@ -78,7 +80,7 @@ h1{
 
 .presentación__contenido__texto {  
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .presentacion__enlaces {
@@ -91,38 +93,42 @@ h1{
 
 .presentacion__enlaces__subtitulo {
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .presentacion__enlaces__links {
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21,5px 0;
     text-decoration: none;
     color: #F6F6F6;   
     font-family: var(--fuente-montserrat);
-    border: 2px solid VAR(--COLOR-TERCIARIO);
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
 .presentacion__enlaces__links:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
     cursor: pointer;
 }
 
+.presentacion__imagen {
+    width: 50%;
+}
+
 .footer {
-    background-color: VAR(--COLOR-TERCIARIO);
-    padding: 24px;
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
     color: var(--color-primario);
     text-align: center;
-    font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
